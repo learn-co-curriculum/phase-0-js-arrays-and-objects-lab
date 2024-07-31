@@ -1,0 +1,12 @@
+{
+  "name": "phase-0-js-arrays-and-objects-lab",
+  "version": "1.0.0",
+  "description": "**Lab: Library Book Management**",
+  "main": "libraryManagement.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
