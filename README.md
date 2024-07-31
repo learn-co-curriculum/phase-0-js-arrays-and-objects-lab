@@ -6,7 +6,7 @@ Imagine you are working for a library that needs to manage its collection of boo
 **Tools and Resources**
 - Visual Studio Code
 - Node.js
-- GitHub repository (to fork and clone)
+- GitHub repository https://github.com/learn-co-curriculum/phase-0-js-arrays-and-objects-lab.git
 - Resources:
   - JavaScript Arrays
   - JavaScript Objects
