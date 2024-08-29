@@ -1,26 +1,29 @@
-let books = [];
+//Write code here
+// Declare the array to store books
+const books = [];
 
-function addBook(title, author, year, status) {
-  let book = { title: title, author: author, year: year, status: status };
+// Function to add a book
+function addBook(title, author, year) {
+  const book = { title, author, year };
   books.push(book);
 }
 
-function checkoutBook(title) {
-  for (let book of books) {
-    if (book.title === title) {
-      if (book.status === 'available') {
-        book.status = 'checked out';
-      } else {
-        console.log(`The book "${title}" is already checked out.`);
-      }
-      return;
-    }
-  }
-  console.log(`The book "${title}" is not found in the library.`);
+// Function to modify the first book
+function modifyFirstBook(newTitle, newAuthor, newYear) {
+  books[0].title = newTitle;
+  books[0].author = newAuthor;
+  books[0].year = newYear;
 }
 
+// Function to remove the last book
+function removeLastBook() {
+  books.pop(); // Remove the last book from the array
+}
+
+//Needed for the test. Don't modify.
 module.exports = {
-  ...(typeof books !== 'undefined' && { books }),
-  ...(typeof addBook !== 'undefined' && { addBook }),
-  ...(typeof checkoutBook !== 'undefined' && { checkoutBook })
+  addBook: typeof addBook !== 'undefined' ? addBook : undefined,
+  modifyFirstBook: typeof modifyFirstBook !== 'undefined' ? modifyFirstBook : undefined,
+  removeLastBook: typeof removeLastBook !== 'undefined' ? removeLastBook : undefined,
+  books
 };
