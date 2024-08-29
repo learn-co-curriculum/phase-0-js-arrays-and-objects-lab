@@ -4,7 +4,8 @@
 
 //Needed for the test. Don't modify.
 module.exports = {
-  ...(typeof books !== 'undefined' && { books }),
-  ...(typeof addBook !== 'undefined' && { addBook }),
-  ...(typeof checkoutBook !== 'undefined' && { checkoutBook })
+  addBook: typeof addBook !== 'undefined' ? addBook : undefined,
+  modifyFirstBook: typeof modifyFirstBook !== 'undefined' ? modifyFirstBook : undefined,
+  removeLastBook: typeof removeLastBook !== 'undefined' ? removeLastBook : undefined,
+  books
 };
