@@ -1,7 +1,12 @@
 **Lab: Library Book Management**
 
 **Overview**
-Imagine you are working for a library that needs to manage its collection of books and their availability status. Your task is to create a system to manage book information and track their availability. You will use arrays to store lists of books, objects to represent individual books, and debugging techniques to ensure everything works correctly. This lab will help you practice and apply the skills you've learned in a realistic scenario, with a heavy emphasis on using debugging tools to solve problems.
+In this lab, you will create a simple system to manage a library's collection of books. You will use arrays to store lists of books and objects to represent individual books. The goal is to practice working with arrays and objects in JavaScript through basic operations like adding, modifying, and removing books.
+
+**Objectives**
+By the end of this lab, you should be able to:
+- Create an array to store book objects.
+- Write functions to add a book, modify the first book, and remove the last book in the array.
 
 **Tools and Resources**
 - Visual Studio Code
@@ -28,20 +33,12 @@ Imagine you are working for a library that needs to manage its collection of boo
 3. **Declare the Arrays**
    - Declare an empty array named `books` to store book objects.
 
-4. **Create Book Objects**
-   - Define objects for each book and add them to the `books` array.
-   - Each book object should have the properties: `title` (string), `author` (string), `year` (number), and `status` (string: 'available' or 'checked out').
+4. **Write Functions**
+- Add a Book: Write a function called `addBook` that takes `title`, `author`, and `year` as parameters. Inside the function, create a book object with these properties and add it to the books array.
 
-5. **Document the Add Book Function**
-   - Write a function `addBook` that takes `title`, `author`, `year`, and `status` as parameters.
-   - Inside the function, create a book object with these properties and add it to the `books` array.
+- Modify the First Book: Write a function called `modifyFirstBook` that takes `newTitle`, `newAuthor`, and `newYear` as parameters. This function should update the properties of the first book in the array.
 
-6. **Create a Function to Check Out a Book**
-   - Write a function `checkoutBook` that takes `title` as a parameter.
-   - Inside the function, find the book in the `books` array and change its `status` to 'checked out'.
-   - If the book is already checked out, print a message indicating that the book is not available in this format.
-   `The book "${title}" is already checked out.`
-   - If the book is not in the array of books, print a message stating it's not found in this format. `The book "${title}" is not found in the library.`
+- Remove the Last Book: Write a function called `removeLastBook` that removes the last book in the books array.
 
 7. **Debug the Functions**
    - Insert `debugger` statements or use `console.log`'s to help solve the problem if needed.
